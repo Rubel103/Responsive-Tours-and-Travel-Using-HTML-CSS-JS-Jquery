@@ -191,7 +191,7 @@ header .fa-bars{
 /* feature section */
 
 .feature{
-    height: 200vh;
+    min-height: 100vh;
     background: #f9f9f9;
 
 }
@@ -280,8 +280,58 @@ header .fa-bars{
     color: #5c90c1;
 }
 
+/* about ection */
 
+.about{
+    min-height: 100vh;
+}
 
+.about .row{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.about .row .image img{
+    height: 65vh;
+    width: 50vw;
+
+}
+
+.about .row .content h3{
+    font-size: 4rem;
+    color: #5c90c1;
+}
+.about .row .content p{
+    font-size: 1.9rem;
+    color: #333;
+    margin-top: .5rem;
+}
+
+.about .row .content .btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .2s linear;
+    height: 4rem;
+    width: 18rem;
+    margin-top: 2rem;
+    color: white;
+    background: #5c90c1;
+    font-size: 2rem;
+}
+
+.about .row .content  .btn1,
+.about .row .content .btn:hover{
+    background: none;
+    color: #5c90c1;
+    border: .2rem solid #5c90c1;
+    margin-right: .9rem;
+}
 
 
 
