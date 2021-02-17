@@ -435,4 +435,22 @@ header .fa-bars{
 
 }
 
+/* media query for about section  */
 
+@media (max-width:768px){
+
+    .about .row{
+        flex-flow: column;
+    }
+
+    .about .row .image img{
+        width: 90vw;
+    }
+
+    .about .row .content{
+        text-align: center;
+    }
+    .about .row .content .btn1{
+        margin-right: 0;
+    }
+}
