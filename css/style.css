@@ -473,7 +473,75 @@ header .fa-bars{
 }
 
 
+/* contact section  */
 
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .row .contact-info .box{
+    margin: 4rem 2rem;
+}
+.contact .row .contact-info .box h3{
+    font-size: 2rem;
+    color: black;
+}
+.contact .row .contact-info .box h3 i{
+    
+    color: #5c90c1;
+
+}
+
+.contact .row .contact-info .box p{
+    padding-left: 3rem;
+    font-size: 1.8rem;
+    color: #aaa;
+    text-transform: none;
+}
+
+
+.contact .row .contact_form{
+    width: 50%;
+}
+.contact .row .contact_form h3{
+
+    font-size: 4rem;
+    padding-top: 4rem;
+    color: #5c90c1;
+}
+
+.contact .row .contact_form  form input,textarea{
+    outline: none;
+    border: .2rem solid #5c90c1;
+    height: 4rem;
+    width: 49%;
+    background: white;
+    padding: 1rem 1rem;
+    margin: 1rem .21rem;
+    font-size: 1.6rem;
+}
+
+.contact .row .contact_form  form textarea{
+    width:100%;
+    padding: 1rem;
+    resize: none;
+    height: 20%;
+}
+
+.contact .row .contact_form  form input[type="submit"]{
+    color: #5c90c1;
+    border: .2rem solid #5c90c1;
+    cursor: pointer;
+    transition: .3s;
+    width: 20rem;
+}
+
+.contact .row .contact_form  form input[type="submit"]:hover{
+    color: white;
+    background: #5c90c1;
+}
 
 
 
@@ -569,7 +637,6 @@ header .fa-bars{
         width: 100%;
         margin: 3rem 0;
     }
-
 }
 
 /* media query for about section  */
@@ -590,4 +657,37 @@ header .fa-bars{
     .about .row .content .btn1{
         margin-right: 0;
     }
+}
+
+
+/* media queries  for contact section*/
+@media (max-width:768px){
+
+    .contact .row {
+        flex-flow: column;
+        align-items: flex-start;
+
+    }
+
+    .contact .row .contact_form{
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+
+}
+
+@media (max-width:521px){
+    .contact .row .contact_form form input{
+        width: 100%;
+        margin: 1rem 0;
+
+    }
+    .contact .row .contact_form  form input[type="submit"]{
+        width: 100%;
+        margin: 1rem 0;
+
+    }
+
 }
