@@ -335,6 +335,73 @@ header .fa-bars{
 
 
 
+/* Gallery section  */
+
+.gallery{
+    min-height: 100vh;
+}
+
+.gallery .box_container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    /* position: absolute; */
+}
+
+.gallery .box_container .box{
+    height: 20rem;
+    width: 25rem;
+    margin: 2rem;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery .box_container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .box_container .box .icon{
+
+    position: absolute;
+    /* top: 0; */
+    top: 120%;
+    left: 0;
+    background: linear-gradient(transparent, rgb(71, 95, 105));
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+
+    opacity: 0;
+    transition: .2s linear;
+    
+}
+
+.gallery .box_container .box:hover .icon{
+    opacity: 1;
+    top: 0;
+}
+
+.gallery .box_container .box .icon a{
+    color: white;
+    text-shadow: 0 .1rem .3rem black;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.gallery .box_container .box .icon a:hover{
+
+    color: #5c90c1;
+}
+
 
 
 
