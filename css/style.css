@@ -381,7 +381,7 @@ header .fa-bars{
     width: 100%;
 
     opacity: 0;
-    transition: .2s linear;
+    transition: .3s linear;
     
 }
 
@@ -400,6 +400,76 @@ header .fa-bars{
 .gallery .box_container .box .icon a:hover{
 
     color: #5c90c1;
+}
+
+
+/* review section  */
+
+.review{
+    background: url(../img/review-bg.jpg), linear-gradient(#5c90c1, #5c90c1) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+.review .heading {
+
+    color: white;
+    padding-bottom: 4rem;
+}
+.review .heading span {
+
+    color: gold;
+}
+
+.review .box_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review .box_container .box{
+
+    width: 30rem;
+    margin: 5rem 2rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    box-shadow: 0 .3rem .5rem black;
+    background: white;
+}
+.review .box_container .box .image{
+    margin-top: -5rem;
+}
+
+.review .box_container .box .image img{
+
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: .7rem solid white;
+}
+
+.review .box_container .box .content h3{
+
+    font-size: 2rem;
+    color: #5c90c1;
+
+}
+
+.review .box_container .box .content p{
+
+    font-size: 1.5rem;
+    color: black;
+    padding: .5rem 1.5rem;
+
+}
+
+.review .box_container .box .content .stars i{
+    color: gold;
+    font-size: 1.5rem;
+    padding: 2rem .3rem;
 }
 
 
